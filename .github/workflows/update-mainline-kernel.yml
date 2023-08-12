@@ -95,9 +95,9 @@ jobs:
         run: |
           pwd
           
-      - name: Copy public key file in workspace
-        run: |
-          echo "${{ env.public_key }}" > /github/workspace/public.key
+      #- name: Copy public key file in workspace
+      #  run: |
+      #    echo "${{ env.public_key }}" > /github/workspace/public.key
 
         
       - name: Copy public key file into working dir
