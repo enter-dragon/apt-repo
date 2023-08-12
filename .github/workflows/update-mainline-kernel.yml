@@ -95,9 +95,14 @@ jobs:
         run: |
           pwd
           
-      - name: Copy public key file
+      - name: Copy public key file in workspace
         run: |
           echo "${{ secrets.PUBLIC_KEY }}" > /github/workspace/public.key
+
+        
+      - name: Copy public key file into working dir
+        run: |
+          echo "${{ secrets.PUBLIC_KEY }}" > /home/runner/work/apt-repo/apt-repo/public.key
 
       - name: Adding jammy mainline kernel packages
         uses: smeinecke/apt-repo-action@v2.1.4
