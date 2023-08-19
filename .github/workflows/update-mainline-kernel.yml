@@ -107,6 +107,7 @@ jobs:
       - name: Adding jammy mainline kernel packages
         uses: smeinecke/apt-repo-action@v2.1.4
         with:
+        
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo_supported_arch: |
             amd64
@@ -122,6 +123,12 @@ jobs:
           repo_folder: "debian_ubuntu"
 
       - name: Adding lunar mainline kernel packages
+        env:
+          public_key: ${{ secrets.PUBLIC }}
+          private_key: ${{ secrets.PRIVATE }}
+          INPUT_DEBUG: true  # Set the debug flag if needed
+          INPUT_PUBLIC_KEY: ${{ secrets.PUBLIC }}
+          INPUT_PRIVATE_KEY: ${{ secrets.PRIVATE }}
         uses: smeinecke/apt-repo-action@v2.1.4
         with:
           debug: true
