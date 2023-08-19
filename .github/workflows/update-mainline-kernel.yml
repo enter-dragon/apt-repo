@@ -106,8 +106,14 @@ jobs:
 
       - name: Adding jammy mainline kernel packages
         uses: smeinecke/apt-repo-action@v2.1.4
+        env:
+          public_key: ${{ secrets.PUBLIC }}
+          private_key: ${{ secrets.PRIVATE }}
+          INPUT_DEBUG: true  # Set the debug flag if needed
+          INPUT_PUBLIC_KEY: ${{ secrets.PUBLIC }}
+          INPUT_PRIVATE_KEY: ${{ secrets.PRIVATE }}
         with:
-        
+          debug: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo_supported_arch: |
             amd64
@@ -117,8 +123,8 @@ jobs:
             jammy
           file: eupnea-mainline-kernel*.deb
           file_target_version: jammy
-          public_key: ${{ env.public_key }}
-          private_key: ${{ env.private_key }}
+          public_key: ${{ secrets.PUBLIC }}
+          private_key: ${{ secrets.PRIVATE }}
           key_passphrase: ""
           repo_folder: "debian_ubuntu"
 
@@ -129,7 +135,8 @@ jobs:
           INPUT_DEBUG: true  # Set the debug flag if needed
           INPUT_PUBLIC_KEY: ${{ secrets.PUBLIC }}
           INPUT_PRIVATE_KEY: ${{ secrets.PRIVATE }}
-        uses: smeinecke/apt-repo-action@v2.1.4
+        #uses: smeinecke/apt-repo-action@v2.1.4
+        uses: arkane-systems/apt-repo-update@v1.1
         with:
           debug: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -141,7 +148,7 @@ jobs:
             jammy
           file: eupnea-mainline-kernel*.deb
           file_target_version: lunar
-          public_key: ${{ env.public_key }}
+          public_key: ${{ secrets.PUBLIC }}
           private_key: ${{ secrets.PRIVATE }}
           key_passphrase: ""
           repo_folder: "debian_ubuntu"
