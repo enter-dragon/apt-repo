@@ -124,11 +124,7 @@ jobs:
           repo_supported_version: |
             lunar
             jammy
-          #file: eupnea-mainline-kernel*.deb
-          file: |
-            eupnea-mainline-kernel.deb
-            eupnea-mainline-kernel-modules.deb
-            eupnea-mainline-kernel-headers.deb
+          file: eupnea-mainline-kernel*.deb
           file_target_version: jammy
           public_key: ${{ secrets.PUBLIC }}
           private_key: ${{ secrets.PRIVATE }}
