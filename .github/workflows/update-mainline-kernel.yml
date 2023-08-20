@@ -115,10 +115,9 @@ jobs:
           INPUT_DEBUG: true  # Set the debug flag if needed
           INPUT_PUBLIC_KEY: ${{ secrets.PUBLIC }}
           INPUT_PRIVATE_KEY: ${{ secrets.PRIVATE }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           debug: true
-          github_token: ${{ env.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           repo_supported_arch: |
             amd64
             i386 #  32 bit systems arent really supported but apt throws a warning otherwise
