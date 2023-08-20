@@ -105,7 +105,8 @@ jobs:
       #    echo "${{ env.public_key }}" > /home/runner/work/apt-repo/apt-repo/public.key
 
       - name: Adding jammy mainline kernel packages
-        uses: smeinecke/apt-repo-action@v2.1.4
+        uses: jrandiny/apt-repo-action@v2.0.1
+        #uses: smeinecke/apt-repo-action@v2.1.4
         #uses: arkane-systems/apt-repo-update@v1.1
         env:
           public_key: ${{ secrets.PUBLIC }}
