@@ -105,7 +105,8 @@ jobs:
       #    echo "${{ env.public_key }}" > /home/runner/work/apt-repo/apt-repo/public.key
 
       - name: Adding jammy mainline kernel packages
-        uses: peternewman/apt-repo-action@9c92bad0779536d5e65db10cb9caa3fdd3008f2f
+        #uses: peternewman/apt-repo-action@9c92bad0779536d5e65db10cb9caa3fdd3008f2f
+        uses: enter-dragon/apt-repo-action@373ccea8785d1e97c99af9ac6696911eeff043c2
         #uses: jrandiny/apt-repo-action@v2.0.1
         #uses: smeinecke/apt-repo-action@v2.1.4 #original
         #uses: arkane-systems/apt-repo-update@v1.1
@@ -140,7 +141,8 @@ jobs:
           INPUT_PRIVATE_KEY: ${{ secrets.PRIVATE }}
         #uses: smeinecke/apt-repo-action@v2.1.4
         #uses: jrandiny/apt-repo-action@v2.0.1
-        uses: peternewman/apt-repo-action@9c92bad0779536d5e65db10cb9caa3fdd3008f2f
+        #uses: peternewman/apt-repo-action@9c92bad0779536d5e65db10cb9caa3fdd3008f2f
+        uses: enter-dragon/apt-repo-action@373ccea8785d1e97c99af9ac6696911eeff043c2
 
         #uses: arkane-systems/apt-repo-update@v1.1
         with:
