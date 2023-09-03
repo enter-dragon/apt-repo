@@ -1,0 +1,63 @@
+Package: eupnea-mainline-kernel
+Version: 1.1.60
+Architecture: amd64
+Maintainer: The Eupnea Project
+Depends: eupnea-mainline-kernel-modules, eupnea-mainline-kernel-headers, eupnea-utils (>= 1.1.89)
+Conflicts: eupnea-chromeos-kernel
+Priority: optional
+Section: kernel
+Filename: pool/main/e/eupnea-mainline-kernel/eupnea-mainline-kernel_1.1.60_amd64.deb
+Size: 43083600
+SHA256: 3918432b018f93e89a56b1a9198083ac0e0acae636ec5b2b63ad4094300f9c90
+SHA1: b0f42e5c6d509c024ff9dd58d06e23247455533b
+MD5sum: 66cbce01058e56dec331db3b0a0764fe
+Description: Eupnea Mainline kernel
+ WARNING: This package will overwrite the first partition of your current drive!
+ Only use it on Chromebooks running Eupnea systems!
+ This package contains the Eupnea Mainline kernel. It is only compatible with x86_64 Chromebooks.
+
+Package: eupnea-mainline-kernel-headers
+Version: 1.1.60
+Architecture: amd64
+Maintainer: The Eupnea Project
+Depends: eupnea-mainline-kernel-modules
+Priority: optional
+Section: kernel
+Filename: pool/main/e/eupnea-mainline-kernel-headers/eupnea-mainline-kernel-headers_1.1.60_amd64.deb
+Size: 10741232
+SHA256: f0b32a1365206f1f3a0e73e3421701591a37da942f423a9ec445ce81589b70b8
+SHA1: d23a5a89f4341fa95883fe0f82a057a2a39b5954
+MD5sum: dbe532403656e8fd208562cf66bbb03f
+Description: Eupnea Mainline kernel headers
+ This package contains the Eupnea Mainline kernel headers. It is only compatible with Eupnea mainline kernels.
+
+Package: eupnea-mainline-kernel-modules
+Version: 1.1.60
+Architecture: amd64
+Maintainer: The Eupnea Project
+Priority: optional
+Section: kernel
+Filename: pool/main/e/eupnea-mainline-kernel-modules/eupnea-mainline-kernel-modules_1.1.60_amd64.deb
+Size: 83013204
+SHA256: 1bb41307ee826509268deee58fca76da90753a9378ef14d0ea69cd0407ab8df3
+SHA1: a4bfe2889250735783edac168339ee96a420b48a
+MD5sum: b924df7ef8703e1f42665bd77d8b7a15
+Description: Eupnea Mainline kernel modules
+ This package contains the Eupnea Mainline kernel modules. It is only compatible with Eupnea Mainline kernels.
+
+Package: eupnea-utils
+Version: 1.1.144
+Architecture: amd64
+Maintainer: The Eupnea Project
+Depends: cgpt, vboot-kernel-utils, parted, fdisk, rsync, git, strace, alsa-utils
+Priority: optional
+Section: admin
+Filename: pool/main/e/eupnea-utils/eupnea-utils_1.1.144_amd64.deb
+Size: 36928
+SHA256: 4f4327b1552c68c37f44912fc23245c69adc8c26ab3e8b9a252aeea7bb0d0617
+SHA1: f06935fc449dcc037e7a35e0d7302079f887c9b4
+MD5sum: 6f8c108e59342e64a2ac139d5b9f0860
+Description: Eupnea utilities
+ This package contains a set of tools to interact with EupneaOS/Depthboot systems.
+ Not recommended for use on non-Chromebook devices.
+

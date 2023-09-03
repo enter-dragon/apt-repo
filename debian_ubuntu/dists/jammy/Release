@@ -1,0 +1,26 @@
+Codename: jammy
+Date: Sun, 03 Sep 2023 21:55:38 UTC
+Architectures: amd64 i386
+Components: main
+Description: enter-dragon/apt-repo
+MD5Sum:
+ 4b1c8d1371f510db778aa4a3045f149a 2595 main/binary-amd64/Packages
+ 9ab23c4775cbde27691476e9054b68e7 1001 main/binary-amd64/Packages.gz
+ 628b01529cb1eae6dd9784c3c51daadf 71 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ 247be986baa3af77f8365e8b171f2612 70 main/binary-i386/Release
+SHA1:
+ 6fa4211d8bc87c15eb71516ae66f6e83b25adaa7 2595 main/binary-amd64/Packages
+ 0b230da249b7844fd7508525a00f592701715c20 1001 main/binary-amd64/Packages.gz
+ 4720c0de33dcbff380684fae4ee62b804ce4e979 71 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ 9ffae8a5abc8afeb99af7b958c88adb2d4273270 70 main/binary-i386/Release
+SHA256:
+ a3b755d1dec7e5ac21f302f15075801cdf434deff26fc5a606d8a1e8981d2b7a 2595 main/binary-amd64/Packages
+ 5d9ddca7f69f251ae9465dd049080395ceb205fb4a8d4bba85871dd662b7ac52 1001 main/binary-amd64/Packages.gz
+ a5b27e1bf1dd1351da6ace09cc81cf3c7aa56c4d074f3c3a583b8416765dfc26 71 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ f8ced3ecd1c775dbdb2bd5a1e2255147f391820c8c2bc3e5ca3820e6e315ddc9 70 main/binary-i386/Release

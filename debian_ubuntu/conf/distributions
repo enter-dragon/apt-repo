@@ -2,13 +2,13 @@ Description: enter-dragon/apt-repo
 Codename: lunar
 Architectures: amd64 i386 #  32 bit systems arent really supported but apt throws a warning otherwise
 Components: main
-SignWith: F280F3AD592845D9FA674AD943DE1C337A873A79
+SignWith: 4B4341C6F1C36EAF809D7740E32B820471EECAF9
 
 
 Description: enter-dragon/apt-repo
 Codename: jammy
 Architectures: amd64 i386 #  32 bit systems arent really supported but apt throws a warning otherwise
 Components: main
-SignWith: F280F3AD592845D9FA674AD943DE1C337A873A79
+SignWith: 4B4341C6F1C36EAF809D7740E32B820471EECAF9
 
 

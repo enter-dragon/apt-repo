@@ -1,0 +1,26 @@
+Codename: lunar
+Date: Sun, 03 Sep 2023 21:55:37 UTC
+Architectures: amd64 i386
+Components: main
+Description: enter-dragon/apt-repo
+MD5Sum:
+ c91ac122a3316a013540fcd5f1bac754 1985 main/binary-amd64/Packages
+ 13304bb4899d8cc390b8ae0bfdaec757 761 main/binary-amd64/Packages.gz
+ 628b01529cb1eae6dd9784c3c51daadf 71 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ 247be986baa3af77f8365e8b171f2612 70 main/binary-i386/Release
+SHA1:
+ b2796db624f7156eef3a49fb9688fe081babd5e5 1985 main/binary-amd64/Packages
+ a9b21422e94038390720ba5ce9e39f713f4893a8 761 main/binary-amd64/Packages.gz
+ 4720c0de33dcbff380684fae4ee62b804ce4e979 71 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ 9ffae8a5abc8afeb99af7b958c88adb2d4273270 70 main/binary-i386/Release
+SHA256:
+ 260fc34d407a0d8d5009561ab52cdcf52e8a7ebbe27176bce7ff215083de0c6e 1985 main/binary-amd64/Packages
+ 854bb3b2d347a1934fe871059f8cc087a18c9323b2d43958f95f3717d9df4534 761 main/binary-amd64/Packages.gz
+ a5b27e1bf1dd1351da6ace09cc81cf3c7aa56c4d074f3c3a583b8416765dfc26 71 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ f8ced3ecd1c775dbdb2bd5a1e2255147f391820c8c2bc3e5ca3820e6e315ddc9 70 main/binary-i386/Release
