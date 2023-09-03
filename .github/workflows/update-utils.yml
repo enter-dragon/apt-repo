@@ -1,7 +1,7 @@
 name: Deploying utils package
 on:
   schedule:
-    - cron: "0 0 * * *" # run at the start of every day after script repos update
+    - cron: "0 0 1 * *" # run at the start of every day after script repos update (the 1st of every month)
   workflow_dispatch:
 concurrency:
   group: ${{ github.ref }}
@@ -105,7 +105,7 @@ jobs:
           file_target_version: jammy
           public_key: ${{ secrets.PUBLIC }}
           private_key: ${{ secrets.PRIVATE }}
-          key_passphrase: ""
+          key_passphrase: ${{ secrets.KEY }}
           repo_folder: "debian_ubuntu"
 
       - name: Adding lunar util packages
@@ -122,5 +122,5 @@ jobs:
           file_target_version: lunar
           public_key: ${{ secrets.PUBLIC }}
           private_key: ${{ secrets.PRIVATE }}
-          key_passphrase: ""
+          key_passphrase: ${{ secrets.KEY }}
           repo_folder: "debian_ubuntu"
