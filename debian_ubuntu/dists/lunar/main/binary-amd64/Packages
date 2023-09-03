@@ -45,3 +45,19 @@ MD5sum: b924df7ef8703e1f42665bd77d8b7a15
 Description: Eupnea Mainline kernel modules
  This package contains the Eupnea Mainline kernel modules. It is only compatible with Eupnea Mainline kernels.
 
+Package: eupnea-utils
+Version: 1.1.144
+Architecture: amd64
+Maintainer: The Eupnea Project
+Depends: cgpt, vboot-kernel-utils, parted, fdisk, rsync, git, strace, alsa-utils
+Priority: optional
+Section: admin
+Filename: pool/main/e/eupnea-utils/eupnea-utils_1.1.144_amd64.deb
+Size: 36928
+SHA256: 4f4327b1552c68c37f44912fc23245c69adc8c26ab3e8b9a252aeea7bb0d0617
+SHA1: f06935fc449dcc037e7a35e0d7302079f887c9b4
+MD5sum: 6f8c108e59342e64a2ac139d5b9f0860
+Description: Eupnea utilities
+ This package contains a set of tools to interact with EupneaOS/Depthboot systems.
+ Not recommended for use on non-Chromebook devices.
+
